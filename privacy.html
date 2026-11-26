@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minput Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --rule: #e5e5ea;
+    --accent: #0a66d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1c1e;
+      --text: #f2f2f7;
+      --muted: #a1a1a6;
+      --rule: #3a3a3c;
+      --accent: #5aa2ff;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 20px 64px;
+  }
+  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; margin: 0 0 12px; }
+  .date { color: var(--muted); margin-bottom: 28px; }
+  .summary {
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 16px 0;
+    margin: 0 0 8px;
+  }
+  code { font: 15px ui-monospace, SFMono-Regular, Menlo, monospace; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Minput Privacy Policy</h1>
+  <p class="date">Effective November 25, 2026</p>
+
+  <p>Minput (also listed as MagicInput) is a voice keyboard for iPhone and iPad and a menu bar app for the Mac. You
+  speak, a speech service turns what you said into text, and Minput types it where your cursor is. This policy
+  explains what happens to your information when you use it.</p>
+
+  <p class="summary"><strong>In short:</strong> Minput has no accounts, analytics, advertising or tracking. The
+  microphone is used only while you dictate. Each dictation's audio, and a little text from around your cursor, goes
+  to the speech service you chose, to be turned into text. Everything else stays on your device or in your own
+  iCloud.</p>
+
+  <h2>What goes to the speech service</h2>
+  <p>When you dictate, Minput sends the speech service:</p>
+  <ul>
+    <li>the recording of what you said (on iPhone, after the optional on-device filter that keeps only your voice);</li>
+    <li>your settings for that dictation, such as language and punctuation;</li>
+    <li>context that helps it get names and wording right: which app you are typing in (its identifier, and on the
+    Mac its name), up to 1,500 characters before your cursor and 500 after it, and any text you have selected.</li>
+  </ul>
+  <p>The service sends back the text, which Minput types for you. Two services can be chosen in Settings:</p>
+  <ul>
+    <li><strong>Dropline</strong> (the default), the speech-to-text service at
+    <a href="https://dropline.fish.audio">dropline.fish.audio</a>, reached through the developer's Dropline account.
+    Dropline handles what it receives under its own terms and privacy policy.</li>
+    <li><strong>minput-server</strong>, at the address set in Settings. Unless you change that address, it is a server
+    run by the developer of Minput. It keeps what it worked out for each dictation (the recognized text and the steps
+    to the final text) in memory for up to 48 hours, and on disk for 30 days for dictations made in comparison mode,
+    so that recognition can be checked and improved. When it is in use, the words you add to the dictionary, and in
+    comparison mode your ratings and corrections along with that dictation's recording, are sent to it too.</li>
+  </ul>
+  <p>Neither service receives your name, email address, Apple ID or any identifier for you or your device, beyond
+  the network address that every internet connection carries. Both are reached over encrypted connections.</p>
+
+  <h2>What stays on your device</h2>
+  <ul>
+    <li>History: your recent dictations, their text, and their recordings, so you can copy one again or send a
+    recording that didn't go through once more.</li>
+    <li>Your settings, your dictionary, and, if you set up "keep only my voice", your voiceprint: a short list of
+    numbers that describes your voice, not a recording. The voiceprint is never uploaded.</li>
+    <li>A log of what the app did (steps, timings and errors; never the text you dictated). It leaves the device only
+    if you share it yourself, from Settings → 导出诊断日志 (Export diagnostic log).</li>
+    <li>Recordings and results that "auto export", if you turn it on (it is off by default), saves into Minput's
+    folder in the Files app.</li>
+  </ul>
+
+  <h2>The microphone and the keyboard</h2>
+  <p>Minput turns the microphone on when you start a dictation and off when it ends. The keyboard needs Full Access
+  so that it and the Minput app can pass recordings and results to each other on your device. The keyboard reads the
+  text around your cursor only when you dictate, to send it as the context described above. It doesn't keep or send
+  anything you type with other keyboards.</p>
+  <p>On the Mac, Input Monitoring is used only to notice the dictation hotkey (Fn + Control by default); your keystrokes
+  are not recorded or sent anywhere. Accessibility is used to paste the text into the app in front.</p>
+
+  <h2>iCloud</h2>
+  <p>With iCloud sync on (the default; you can turn it off in Settings), Minput keeps your History, including its
+  recordings, in your private iCloud database, and your settings in your iCloud key-value storage, so that your other
+  devices signed in to the same Apple ID have them. Apple stores this under your Apple ID; the developer of Minput
+  has no access to it.</p>
+
+  <h2>Network checks</h2>
+  <p>To tell you when the speech service may be unreachable, Minput checks whether it is up. When a dictation is
+  slow, it also pings the nearest point of your own network, such as your Wi-Fi router or VPN gateway, to tell a
+  network problem from a service problem. These checks carry no personal information.</p>
+
+  <h2>Children</h2>
+  <p>Minput is not directed at children.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted at this address with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:m@7yu.io">m@7yu.io</a>.</p>
+</main>
+</body>
+</html>
