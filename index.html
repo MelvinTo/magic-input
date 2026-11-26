@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minput</title>
+<meta name="description" content="Minput is a voice keyboard for iPhone, iPad and Mac: speak, and clean text appears where your cursor is.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --rule: #e5e5ea;
+    --accent: #0a66d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1c1e;
+      --text: #f2f2f7;
+      --muted: #a1a1a6;
+      --rule: #3a3a3c;
+      --accent: #5aa2ff;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 20px 64px;
+  }
+  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; margin: 0 0 12px; }
+  .lede { color: var(--muted); margin-bottom: 28px; }
+  figure { margin: 0 0 8px; text-align: center; }
+  video {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 24px;
+    border: 1px solid var(--rule);
+    background: #000;
+  }
+  figcaption { color: var(--muted); font-size: 15px; margin-top: 8px; }
+  footer { border-top: 1px solid var(--rule); margin-top: 40px; padding-top: 16px; color: var(--muted); font-size: 15px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Minput</h1>
+  <p class="lede">A voice keyboard for iPhone, iPad and Mac. Speak, and clean text appears where your cursor is.</p>
+
+  <figure>
+    <video src="demo.mp4" controls playsinline preload="metadata"></video>
+    <figcaption>Two dictations in Messages, one in English and one in Chinese. Sound on: the filler words and
+    the change of mind are taken out.</figcaption>
+  </figure>
+
+  <h2>How it works</h2>
+  <ul>
+    <li><strong>iPhone and iPad:</strong> switch to the Minput keyboard in any app. Tap the big key, speak, and tap
+    it again; or hold it while you talk. The text is typed where your cursor is.</li>
+    <li><strong>Mac:</strong> Minput lives in the menu bar. Hold Fn + Control, speak, and let go; the text is pasted
+    into the app in front.</li>
+    <li>Filler words ("um", "呃") are removed, self-corrections are applied, and numbers are formatted. Chinese,
+    English and a mix of both work.</li>
+    <li>History keeps your recent dictations, synced through iCloud, so you can copy one again or retry one that
+    didn't go through.</li>
+  </ul>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> · Contact <a href="mailto:m@7yu.io">m@7yu.io</a>
+  </footer>
+</main>
+</body>
+</html>
